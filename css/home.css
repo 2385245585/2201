@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+.top{
+    height: 50px;
+    background-color: rgb(177, 179, 187);
+}
+.topOne{
+    width: 78%;
+    height: 50px;
+    /* background-color: aqua; */
+    margin: 0 auto;
+}
+.topOne ul{
+   display: flex;
+   line-height: 50px;
+}
+.topOne ul li{
+    padding-left:10px ;
+}
+.top a {
+    text-decoration : none 
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/dlzc.css">
+</head>
+
+<body>
+    <div class="reg_back">
+        <div class="reg_left">
+            <p>新用户注册</p>
+            <p>USER REGISTER</p>
+        </div>
+        <div class="reg_center">
+            <div class="reg_form">
+                <form action="#" method="post" id="form">
+                    <table>
+                        <tr>
+                            <td class="td_left"><label for="username">用户名</label></td>
+                            <td class="td_right"><input type="text" name="username" placeholder="请输入用户名(英文字符或数字)"
+                                    id="username">
+                                <span id="s_username" class="error"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_left"><label for="password">密码</label></td>
+                            <td class="td_right"><input type="password" name="password" placeholder="请输入密码（长度在6~12位之间）"
+                                    id="password">
+                                <span id="s_password" class="error"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="td_left"><label for="rename">姓名</label></td>
+                            <td class="td_right"><input type="text" name="rename" placeholder="请输入真实姓名（中文姓名）"
+                                    id="rename">
+                                <span id="s_rename" class="error"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_left"><label for="checkcode">验证码</label></td>
+                            <td class="td_right"><input type="text" name="checkcode" id="checkcode">
+
+
+                        </tr>
+                        <tr>
+                            <td colspan="2" id="td_sub"><input type="submit" value="注册" id="btn_sub"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="reg_right">
+            <p>已有账号?<a href="#">立即登录</a></p>
+        </div>
+    </div>
+    <script src="../js/dlzc.js"></script>
+
+</body>
+
+</html>
