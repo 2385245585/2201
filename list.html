@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>会员登录</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/commonfoot1.css">
+    <link rel="stylesheet" href="font_2834213_bpupwpvb8k6/iconfont.css">
+    <meta name="referrer" content="no-referrer">
+    <script src="js/promiseAjax.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper-bundle.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <ul class="left">
+                <li>
+                    <span class="iconfont icon-shoucang"></span>收藏此网站
+                </li>
+                <li class="tan">
+                    <span class="iconfont icon-weixin"></span>关注微信
+                    <!-- 鼠标移入弹出来的二维码 -->
+                    <div class="tan">
+                        <img src="images/wxguanjia_qrcode.png" alt="">
+                        <p>
+                            扫码关注
+                            <br>
+                            回复"礼物"更多惊喜!
+                        </p>
+                    </div>
+                </li>
+                <li class="tan">
+                    <span class="iconfont icon-shouji"></span>
+                    app
+                    <!-- 鼠标移入弹出来的二维码 -->
+                    <div class="tan">
+                        <img src="images/app_download_qrcode.png" alt="">
+                        <p>
+                            新人专享100元APP礼包
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="right">
+                <li class="to_login name">你好，请登录</li>
+                <li class="to_register">注册</li>
+                <li class="line">|</li>
+                <li>订单查询</li>
+                <li class="line">|</li>
+                <li class="to_login">个人服务</li>
+                <li class="line">|</li>
+                <li class="tan">客户服务
+                    <div class="tan customer">
+                        <ul class="customer">
+                            <li>在线付款</li>
+                            <li>帮助中心</li>
+                            <li>售后服务</li>
+                            <li>配送范围</li>
+                            <li>留言反馈</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="line">|</li>
+                <li class="tan">
+                    <span class="iconfont icon-gouwuche"></span>
+                    购物车
+                    <div class="cart">
+                        你的购物车中没有商品，先去选购吧！
+                    </div>
+                </li>
+                <!-- <li class="line">|</li>
+                <li>鲜花礼品网:中国领先的鲜花网品牌</li> -->
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="container clear_fix">
+            <!-- <div class="float_l logo">
+                <img src="images/big-logo.png" alt="">
+            </div> -->
+            <div class="float_l search">
+                <input type="text" placeholder="商品关键词">
+                <span>搜索</span>
+            </div>
+            <div class="float_r text">
+                <ul>
+                   <li>
+                        <span class="iconfont icon-24gl-phoneBubble
+                        "></span>
+                        173-0000-0000
+                   </li> 
+                   <li>|</li>
+                   <li>
+                        <span class="iconfont icon-zaixiankefu
+                        "></span>
+                        在线客服
+                   </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- 类别的导航条 -->
+    <div id="nav">
+        <div class="container clear_fix">
+            <div class="clear_fix menu float_l">
+                <span class="txt float_l">
+                    全部商品导购
+                </span>
+                <span class="iconfont icon-arrow-down float_r"></span>
+                <div class="popup">
+                    <!-- <h4 class="title">鲜花</h4>
+                    <ul class="popup_list">
+                        <li>dddd</li>
+                        <li>dddd</li> 
+                        <li>dddd</li> 
+                        <li>dddd</li> 
+                    </ul> -->
+                </div>
+            </div>
+            <ul class="float_l list">
+                <li>鲜花</li>
+                <li>永生花</li>
+                <li>蛋糕</li>
+                <li>礼品</li>
+                <li>巧克力</li>
+                <li>花语大全</li>
+                <li>企业团购设计师臻选鲜花</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 中间的主要内容区 左右两栏写 -->
+    <section>
+        <div class="container">
+            <div class="main clear_fix">
+                <!-- 左栏 -->
+                <aside class="float_l">
+                    <!-- 第一部分  分类 -->
+                    <div class="classify">
+                        <!-- 用途 -->
+                        <div class="item clear_fix">
+                            <!-- 左边 上图下文 -->
+                            <div class="left float_l">
+                                <span class="icon forwhat"></span>
+                                <h5>用途</h5>
+                            </div>
+                            <!-- 右边 列表 -->
+                            <ul class="classify_ul float_r clear_fix " id="seventy">
+                                <li>爱情鲜花</li>
+                                <li>友情鲜花</li>
+                                <li>生日鲜花</li>
+                                <li>问候长辈</li>
+                                <li>回报老师</li>
+                                <li>探病慰问</li>
+                                <li>道歉鲜花</li>
+                                <li>婚庆鲜花</li>
+                                <li>祝贺鲜花</li>
+                                <li>哀思鲜花</li>
+                                <li>商务鲜花</li>
+                                <li>开业花篮</li>
+                                <li>自选鲜花</li>
+                                <li>港澳台送花</li>
+                            </ul>
+                        </div>
+                        <!-- 花材 -->
+                        <div class="item clear_fix">
+                            <!-- 左边 上图下文 -->
+                            <div class="left float_l">
+                                <span class="icon flower"></span>
+                                <h5>花材</h5>
+                            </div>
+                            <!-- 右边 列表 -->
+                            <ul class="classify_ul float_r clear_fix " id="seventy">
+                                <li>玫瑰</li>
+                                <li>红玫瑰</li>
+                                <li>粉玫瑰</li>
+                                <li>白玫瑰</li>
+                                <li>紫玫瑰</li>
+                                <li>香槟玫瑰</li>
+                                <li>黄玫瑰</li>
+                                <li>康乃馨</li>
+                                <li>百合</li>
+                                <li>扶郞</li>
+                                <li>向日葵</li>
+                                <li>郁金香</li>
+                                <li>马蹄莲</li>
+                            </ul>
+                        </div>
+                        <!-- 颜色 -->
+                        <div class="item clear_fix">
+                            <!-- 左边 上图下文 -->
+                            <div class="left float_l">
+                                <span class="icon color"></span>
+                                <h5>颜色</h5>
+                            </div>
+                            <!-- 右边 列表 -->
+                            <ul class="classify_ul float_r clear_fix color" id="seventy">
+                                <li>
+                                    <span class="red"></span>红色
+                                </li>
+                                <li>
+                                    <span class="pink"></span>粉色
+                                </li>
+                                <li>
+                                    <span class="champagne"></span>香槟
+                                </li>
+                                <li>
+                                    <span class="yellow"></span>黄色
+                                </li>
+                                <li>
+                                    <span class="white"></span>白色
+                                </li>
+                                <li>
+                                    <span class="purple"></span>紫色
+                                </li>
+                                <li>
+                                    <span class="blue"></span>蓝色
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 类别 -->
+                        <div class="item clear_fix">
+                            <!-- 左边 上图下文 -->
+                            <div class="left float_l">
+                                <span class="icon lei"></span>
+                                <h5>类别</h5>
+                            </div>
+                            <!-- 右边 列表 -->
+                            <ul class="classify_ul float_r clear_fix " id="seventy">
+                                <li>花束</li>
+                                <li>花盒</li>
+                                <li>瓶花</li>
+                                <li>精品鲜花</li>
+                                <li>果篮</li>
+                                <li>桌面花篮</li>
+                                <li>开业花篮</li>
+                                <li>组合鲜花</li>
+                            </ul>
+                        </div>
+                        <!-- 价格 -->
+                        <div class="item clear_fix">
+                            <!-- 左边 上图下文 -->
+                            <div class="left float_l">
+                                <span class="icon price"></span>
+                                <h5>价格</h5>
+                            </div>
+                            <!-- 右边 列表 -->
+                            <ul class="classify_ul float_r clear_fix " id="seventy">
+                                <li>特价鲜花</li>
+                                <li>150元以下</li>
+                                <li>150-250元</li>
+                                <li>250-350元</li>
+                                <li>350-550元</li>
+                                <li>550-800元</li>
+                                <li>800元以上</li>
+                            </ul>
+                        </div>
+                        <!-- 枝数 -->
+                        <div class="item clear_fix">
+                            <!-- 左边 上图下文 -->
+                            <div class="left float_l">
+                                <span class="icon num"></span>
+                                <h5>枝数</h5>
+                            </div>
+                            <!-- 右边 列表 -->
+                            <ul class="classify_ul float_r clear_fix " id="forty">
+                                <li>9枝</li>
+                                <li>10枝</li>
+                                <li>11枝</li>
+                                <li>12枝</li>
+                                <li>16枝</li>
+                                <li>18枝</li>
+                                <li>19枝</li>
+                                <li>20枝</li>
+                                <li>22枝</li>
+                                <li>29枝</li>
+                                <li>33枝</li>
+                                <li>36枝</li>
+                                <li>50枝</li>
+                                <li>66枝</li>
+                                <li>99枝以上</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 第二部分 -- 热销 发送ajax 请求本地json数据 渲染页面 -->
+                    <div class="hot">
+                        <h3>热销鲜花推荐</h3> 
+                        <div class="hot_content">
+                            <!-- <div class="hot_item">
+                                <div class="hot_img">
+                                <img src="https://img01.hua.com/uploadpic/newpic/9010966.jpg_220x240.jpg" >
+                                </div>
+                                <div class="hot_info">
+                                    <p>鲜花/一往情深-精品玫瑰礼盒:19枝卡罗拉红玫瑰，勿忘我1枝</p>
+                                    <h6>
+                                        <b>￥</b>248</h6>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <!-- 第三部分 -- 评论  发送ajax 请求本地json数据 渲染评论 -->
+                    <div class="review">
+                        <h3>最新鲜花订单评价</h3>
+                        <div class="review_content">
+                            <div class="review_item clear_fix">
+                                <div class="imgbox float_l">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="txtbox float_l">
+                                    <p>会员号：松松</p>
+                                    <span>服务很棒 满意满意 花很好看</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <!-- 右栏 -->
+                <article class="float_r">
+                    <!--  轮播图 banner.js/swiper -->
+                    <div class="ban" id="main">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./images/ban1.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/ban2.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/ban3.jpg" alt="">
+                                </div>
+                            </div>
+                            <!-- 如果需要分页器 -->
+                            <div class="swiper-pagination"></div>
+                            <!-- 如果需要导航按钮 -->
+                            <div class="swiper-button-prev swiper-button-hidden"></div>
+                            <div class="swiper-button-next swiper-button-hidden"></div>
+                        </div>
+                    </div>
+                    <!-- 筛选---导航条 -->
+                    <div class="filter clear_fix">
+                        <ul class="filter clear_fix float_l">
+                            <li class="ItemCode" index = "1">综合</li>
+                            <li class="Sales" index = "1">销量</li>
+                            <li class="Price" index = "1">价格</li>
+                            <li class="price" index = "1">最新</li>
+                        </ul>
+                        <!-- 右边有一个分页器   没写 -->
+                    </div>
+                    <!-- 全是商品 -->
+                    <div class="goodshow clear_fix0">
+                        <div class="goods_content clear_fix">
+                            <!-- <div class="goods_item float_l">
+                                <div class="goods_img">
+                                    <img src="./flowers/ia_100000045.png" alt="">
+                                </div>
+                                <div class="goods_info">
+                                    <p class="price">
+                                        ￥123
+                                    </p>
+                                    <p class="introduce">
+                                        <span class="title">
+                                            鲜花/韩式系列/初心不负- 韩式花束系列花艺师全新打造，卡罗拉玫瑰11枝、白底粉边洋桔梗5枝、大叶尤加利10枝
+                                        </span>
+                                        <span class="content">
+                                            花艺师打造 韩式花束系列
+                                        </span>
+                                    </p>
+                                    <div class="operate">
+                                        <p class="float_l left">
+                                            <span class="iconfont icon-hear-half"></span>
+                                            收藏
+                                        </p>
+                                        <p class="float_l right">
+                                            <span class="iconfont icon-gouwuche"></span>
+                                            加入购物车
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="pagebox">
+
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <div class="footnav">
+        <ul>
+            <li>首页</li>
+            <li class="line">|</li>
+            <li>关于我们</li>
+            <li class="line">|</li>
+            <li>媒体报道</li>
+            <li class="line">|</li>
+            <li>联系方式</li>
+            <li class="line">|</li>
+            <li>企业团购</li>
+            <li class="line">|</li>
+            <li>花店入驻</li>
+            <li class="line">|</li>
+            <li>友情链接</li>
+            <li class="line">|</li>
+            <li>在线补款</li>
+            <li class="line">|</li>
+            <li>为什么选择此网站</li>
+        </ul>
+    </div>
+    <footer>
+        <!-- <div class="top">
+            <div class="imgbox">
+                <img src="images/slogan.png" alt="">
+                <img src="images/100.jpg" alt="">
+                <img src="images/bico1.jpg" alt="">
+                <img src="images/govIcon.gif" alt="">
+            </div>
+        </div> -->
+        <p>中国花卉协会会员 中国电子商务协会员 ICP经营许可证:粤B2-2022|粤ICP备09180420号 粤公网安备4403000000号 Copyright&copy;2022-2022</p>
+        <p>www.gemail.com</p>
+    </footer>
+    <div class="foot-button">
+        <span class="iconfont icon-qunfaxinxi float_l"></span>
+        <span class="float_l">咨询客服</span>
+    </div>
+</body>
+<script src="js/top.js"></script>
+<script src="js/pagenation.js"></script>
+<script src="js/list.js"></script>
+<script src="js/filter.js"></script>
+<script src="js/banner.js"></script>
+</html>

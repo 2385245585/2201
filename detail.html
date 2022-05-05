@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/commonfoot2.css">
+    <link rel="stylesheet" href="css/hsycmsAlert.css">
+    <link rel="stylesheet" href="font_2834213_bpupwpvb8k6/iconfont.css">
+    <script src="js/promiseAjax.js"></script>
+    <script src="js/hsycmsAlert.js"></script>
+    <meta name="referrer" content="no-referrer">
+</head>
+<body>
+    <!-- 顶部的共同的导航条 -->
+    <nav>
+        <div class="container">
+            <ul class="left">
+                <li>
+                    <span class="iconfont icon-shoucang"></span>收藏此网站
+                </li>
+                <li class="tan">
+                    <span class="iconfont icon-weixin"></span>关注微信
+                    <!-- 鼠标移入弹出来的二维码 -->
+                    <div class="tan">
+                        <img src="images/wxguanjia_qrcode.png" alt="">
+                        <p>
+                            扫码关注
+                            <br>
+                            回复"礼物"更多惊喜!
+                        </p>
+                    </div>
+                </li>
+                <li class="tan">
+                    <span class="iconfont icon-shouji"></span>
+                    app
+                    <!-- 鼠标移入弹出来的二维码 -->
+                    <div class="tan">
+                        <img src="images/app_download_qrcode.png" alt="">
+                        <p>
+                            新人专享100元APP礼包
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="right">
+                <li class="to_login name">你好，请登录</li>
+                <li class="to_register">注册</li>
+                <li class="line">|</li>
+                <li>订单查询</li>
+                <li class="line">|</li>
+                <li class="to_login">个人服务</li>
+                <li class="line">|</li>
+                <li class="tan">客户服务
+                    <div class="tan customer">
+                        <ul class="customer">
+                            <li>在线付款</li>
+                            <li>帮助中心</li>
+                            <li>售后服务</li>
+                            <li>配送范围</li>
+                            <li>留言反馈</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="line">|</li>
+                <li class="tan">
+                    <span class="iconfont icon-gouwuche"></span>
+                    购物车
+                    <div class="cart">
+                        你的购物车中没有商品，先去选购吧！
+                    </div>
+                </li>
+                <!-- <li class="line">|</li>
+                <li>中国领先的鲜花网品牌</li> -->
+            </ul>
+        </div>
+    </nav>
+    <!-- 头部区 不同于login 和 register -->
+    <header>
+        <div class="container">
+            <!-- <div class="float_l logo">
+                <img src="images/big-logo.png" alt="">
+            </div> -->
+            <div class="cen float_l ">
+                <div class="search">
+                    <span class="iconfont icon-sousuo"></span>
+                    <input type="text" placeholder="商品关键词">
+                    <span>搜索</span>
+                </div>
+                <div class="txt">
+                    <a href="#">红玫瑰</a>
+                    <a href="#">永生花</a>
+                    <a href="#">生日鲜花</a>
+                    <a href="#">礼品卡</a>
+                </div>
+            </div>
+            <div class="float_r text">
+                <ul>
+                   <li>
+                        <span class="iconfont icon-24gl-phoneBubble
+                        "></span>
+                        173-0000-0000
+                   </li> 
+                   <li>|</li>
+                   <li>
+                        <span class="iconfont icon-zaixiankefu
+                        "></span>
+                        在线客服
+                   </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- 类别的导航条 -->
+    <div id="nav">
+        <div class="container">
+            <div class="clear_fix menu float_l">
+                <span class="icon menu float_l">
+                </span>
+                <span class="float_l">
+                    所有分类
+                </span>
+            </div>
+            <ul class="float_l list">
+                <li>鲜花</li>
+                <li>永生花</li>
+                <li>蛋糕</li>
+                <li>礼品</li>
+                <li>巧克力</li>
+                <li>花语大全</li>
+                <li>企业团购设计师臻选鲜花</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 跳转首页列表页的条 -->
+    <div class="jump">
+        <ul>
+            <li><a href="./home.html">鲜花网</a>&ensp;/&ensp;</li>
+            <li><a href="./list.html">鲜花</a>&ensp;/&ensp;</li>
+            <li class="goods_describe">健康喜乐</li>
+            <!-- 这个li的内容要改变 -->
+        </ul>
+    </div>
+    <!-- 主要部分 -->
+    <section>
+        <div class="container">
+            <!-- 上边的信息 -->
+            
+        </div>
+    </section>
+
+    <!-- 底部商标乱七八糟 -->
+    <footer>
+        <!-- 底部nav  带footer和登录注册样式不一样-->
+        <div class="footnav">
+            <ul class="clear_fix">
+                <li>首页</li>
+                <li>关于我们</li>
+                <li>媒体报道</li>
+                <li>联系方式</li>
+                <li>企业团购</li>
+                <li>花店入驻</li>
+                <li>友情链接</li>
+                <li>在线补款</li>
+                <li>为什么选择此网站</li>
+            </ul>
+        </div>
+        <p>
+            <a href="#">中国花卉协会会员</a>
+            <a href="#">中国电子商务协会员</a>
+            ICP经营许可证:粤B2-2022
+            <a href="#">粤ICP备09180420号</a>
+            <span class="beian"></span>
+            <span class="txt">粤公网安备4403000000号 Copyright&copy;2022-2022</span>
+        </p>
+        <p>
+            <a href="#">www.gemail.com</a>
+            <span class="txt"> 中国领先的鲜花网，品牌服务，鲜花速递专家</span>    
+        </p>
+        <!-- <div class="img">
+            <div class="imgbox">
+                <span></span>
+                <span></span>
+                <span></span>
+                <a href="#">
+                    <img src="images/bico1.jpg" alt="">
+                </a>
+            </div>
+        </div> -->
+        <p>
+            <span class="txt">友链</span>
+            <a href="#">中华取名网</a>
+            <a href="#">深圳房产网</a>
+            <a href="#">卷皮网</a>
+            <a href="#">腕表</a>
+            <a href="#">苗木</a>
+            <a href="#">佐卡伊珠宝网</a>
+            <a href="#">钻石婚戒定制</a>
+            <a href="#">青少年艺术教育网</a>
+            <a href="#">淘狗网</a>
+            <a href="#">礼无忧网</a>
+            <a href="#">宠物狗</a>
+            <a href="#">机友网</a>
+            <a href="#">礼物网</a>
+            <a href="#">新三板</a>
+            <a href="#">商标注册</a>
+            <a href="#">眼镜店</a>
+        </p>
+    </footer>
+    <!-- fixed的小小千 -->
+    <div class="foot-button">
+        <span class="iconfont icon-qunfaxinxi float_l"></span>
+        <span class="float_l">咨询客服</span>
+    </div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/top.js"></script>
+<script src="js/magnifyingGlass.js"></script>
+<script src="js/detail.js"></script>
+</html>

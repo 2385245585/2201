@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>会员注册</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/commonfoot1.css">
+    <link rel="stylesheet" href="font_2834213_bpupwpvb8k6/iconfont.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/promiseAjax.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <ul class="left">
+                <li>
+                    <span class="iconfont icon-shoucang"></span>收藏此网站
+                </li>
+                <li class="tan">
+                    <span class="iconfont icon-weixin"></span>关注微信
+                    <!-- 鼠标移入弹出来的二维码 -->
+                    <div class="tan">
+                        <img src="images/wxguanjia_qrcode.png" alt="">
+                        <p>
+                            扫码关注
+                            <br>
+                            回复"礼物"更多惊喜!
+                        </p>
+                    </div>
+                </li>
+                <li class="tan">
+                    <span class="iconfont icon-shouji"></span>
+                    app
+                    <!-- 鼠标移入弹出来的二维码 -->
+                    <div class="tan">
+                        <img src="images/app_download_qrcode.png" alt="">
+                        <p>
+                            新人专享100元APP礼包
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="right">
+                <li class="to_login name">你好，请登录</li>
+                <li class="to_register">注册</li>
+                <li class="line">|</li>
+                <li>订单查询</li>
+                <li class="line">|</li>
+                <li class="to_login">个人服务</li>
+                <li class="line">|</li>
+                <li class="tan">客户服务
+                    <div class="tan customer">
+                        <ul class="customer">
+                            <li>在线付款</li>
+                            <li>帮助中心</li>
+                            <li>售后服务</li>
+                            <li>配送范围</li>
+                            <li>留言反馈</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="line">|</li>
+                <li class="tan">
+                    <span class="iconfont icon-gouwuche"></span>
+                    购物车
+                    <div class="cart">
+                        你的购物车中没有商品，先去选购吧！
+                    </div>
+                </li>
+                <!-- <li class="line">|</li>
+                <li>鲜花礼品网:中国领先的鲜花网品牌</li> -->
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="container clear_fix">
+            <!-- <div class="float_l logo">
+                <img src="images/big-logo.png" alt="">
+            </div> -->
+            <div class="float_l search">
+                <input type="text" placeholder="商品关键词">
+                <span>搜索</span>
+            </div>
+            <div class="float_r text">
+                <ul>
+                   <li>
+                        <span class="iconfont icon-24gl-phoneBubble
+                        "></span>
+                        173-0000-0000
+                   </li> 
+                   <li>|</li>
+                   <li>
+                        <span class="iconfont icon-zaixiankefu
+                        "></span>
+                        在线客服
+                   </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="float_r main">
+                <ul class="top">
+                    <li class="active">手机号注册</li>
+                    <li>邮箱账号注册</li>
+                </ul>
+                <ul class="cen">
+                    <!-- 账号登录 -->
+                    <li class="left active">
+                        <div class="phonebox user">
+                            <p>
+                                <span class="iconfont icon-shouji float_l"></span>
+                                <input type="text" class="float_r" placeholder="请输入手机号">
+                            </p>
+                        </div>
+                        <div class="passbox ">
+                            <p>
+                                <span class="iconfont icon-lock float_l"></span>
+                                <input type="password" class="float_r" placeholder="请输入密码">
+                            </p>
+                        </div>
+                        <div class="repassbox ">
+                            <p>
+                                <span class="iconfont icon-lock float_l"></span>
+                                <input type="password" class="float_r" placeholder="再次输入密码">
+                            </p>
+                        </div>
+                        <div class="loginbox">
+                            <input type="submit" value="注 册">
+                        </div>
+                    </li>
+                    <li class="right ">
+                        <div class="emailbox user">
+                            <p>
+                                <span class="iconfont icon-youxiang float_l email"></span>
+                                <input type="text" class="float_r" placeholder="请输入邮箱">
+                            </p>
+                        </div>
+                        <div class="passbox">
+                            <p>
+                                <span class="iconfont icon-lock float_l"></span>
+                                <input type="password" class="float_r" placeholder="请输入密码">
+                            </p>
+                        </div>
+                        <div class="repassbox ">
+                            <p>
+                                <span class="iconfont icon-lock float_l"></span>
+                                <input type="password" class="float_r" placeholder="再次输入密码">
+                            </p>
+                        </div>
+                        <div class="loginbox">
+                            <input type="submit" value="注 册">
+                        </div>
+                    </li>
+                    <p class="register">已有账号，去登陆&gt;</p>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="footnav">
+        <ul>
+            <li>首页</li>
+            <li class="line">|</li>
+            <li>关于我们</li>
+            <li class="line">|</li>
+            <li>媒体报道</li>
+            <li class="line">|</li>
+            <li>联系方式</li>
+            <li class="line">|</li>
+            <li>企业团购</li>
+            <li class="line">|</li>
+            <li>花店入驻</li>
+            <li class="line">|</li>
+            <li>友情链接</li>
+            <li class="line">|</li>
+            <li>在线补款</li>
+            <li class="line">|</li>
+            <li>为什么选择花礼网</li>
+        </ul>
+    </div>
+    <footer>
+        <!-- <div class="top">
+            <div class="imgbox">
+                <img src="images/slogan.png" alt="">
+                <img src="images/100.jpg" alt="">
+                <img src="images/bico1.jpg" alt="">
+                <img src="images/govIcon.jpg" alt="">
+            </div>
+        </div> -->
+        <p>中国花卉协会会员 中国电子商务协会员 ICP经营许可证:粤B2-2022|粤ICP备09180420号 粤公网安备4403000000号 Copyright&copy;2022-2022</p>
+        <p>www.gemail.com</p>
+    </footer>
+    <div class="foot-button">
+        <span class="iconfont icon-qunfaxinxi float_l"></span>
+        <span class="float_l">咨询客服</span>
+    </div>
+</body>
+<script src="js/top.js"></script>
+<script src="js/register.js"></script>
+</html>
